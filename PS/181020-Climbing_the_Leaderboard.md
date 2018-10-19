@@ -5,7 +5,7 @@
 ```
 
 ## solve - javascript
-```
+```javascript
 function climbingLeaderboard(scores, alice) {
     const re_scores = Array.from(new Set(scores));
     const result = [];
