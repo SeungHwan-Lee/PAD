@@ -58,7 +58,7 @@ Note: |x| is the absolute value of x
 ```
 
 ## solve - javascript
-```
+```javascript
 'use strict';
 
 const fs = require('fs');
