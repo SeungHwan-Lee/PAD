@@ -8,7 +8,7 @@
 ```
 
 ## solve - javascript
-```
+```javascript
 function plusMinus(arr) {
     const len = arr.length;
     const count = [0, 0, 0];
