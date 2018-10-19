@@ -68,7 +68,7 @@ The return array is .
 ```
 
 ## solve - javascript
-```
+```javascript
 'use strict';
 
 const fs = require('fs');
