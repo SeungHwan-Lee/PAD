@@ -67,7 +67,7 @@ then the total cost will be .
 ```
 
 ## solve - javascript
-```
+```javascript
 'use strict';
 
 const fs = require('fs');
