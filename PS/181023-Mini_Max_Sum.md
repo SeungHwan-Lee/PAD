@@ -9,17 +9,14 @@
 function miniMaxSum(arr) {
     let min = Number.MAX_SAFE_INTEGER;
     let max = Number.MIN_SAFE_INTEGER;
-    const result = [0, 0];
+    let sum = 0;
     
     for(let num of arr) {
         if(min > num) min = num;
         if(max < num) max = num;
-        result[0] += num;
-        result[1] += num;
+        sum += num;
     }
-    result[0] -= max;
-    result[1] -= min;
     
-    console.log(result.join(' '));
+    console.log(`${sum-max} ${sum-min}`);
 }
 ```
