@@ -10,19 +10,15 @@ function miniMaxSum(arr) {
     let min = Number.MAX_SAFE_INTEGER;
     let max = Number.MIN_SAFE_INTEGER;
     const result = [0, 0];
-    const check = [false, false];
     
     for(let num of arr) {
         if(min > num) min = num;
         if(max < num) max = num;
+        result[0] += num;
+        result[1] += num;
     }
-    for(let num of arr) {        
-        if(num != max || check[0]) result[0] += num;
-        else check[0] = true;
-            
-        if(num != min || check[1]) result[1] += num;
-        else check[1] = true;
-    }
+    result[0] -= max;
+    result[1] -= min;
     
     console.log(result.join(' '));
 }
