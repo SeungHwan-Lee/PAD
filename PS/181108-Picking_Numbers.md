@@ -12,9 +12,7 @@ function pickingNumbers(a) {
             return target[key] || 0;
         }
     });
-    for(let num of a) {
-        map[num]++;
-    }
+    for(let num of a) map[num]++;
     let max = 0;
     for(let num of a) {
         let up = map[num]+map[Number(num)+1];
