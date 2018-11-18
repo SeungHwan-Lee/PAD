@@ -8,11 +8,11 @@ k % a.length != 0 아닐때 마지막회전시 시작값 a.length - (k % a.lengt
 ```javascript
 function circularArrayRotation(a, k, queries) {
     const len = a.length;
-    let start = len - (k % len);
+    const start = len - (k % len);
     if(k%len != 0) {
         const temp = [];
-        for(let i=0,j=0; i<a.length; i++) {
-            if(start+i < a.length) temp[i] = a[start+i];
+        for(let i=0,j=0; i<len; i++) {
+            if(start+i < len) temp[i] = a[start+i];
             else {
                 temp[i] = a[j];
                 j++;
