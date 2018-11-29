@@ -1,7 +1,7 @@
 # [Equalize the Array](https://www.hackerrank.com/challenges/equality-in-a-array/problem)
 ## Problem
 ```
-최대점프 n+2, 번개시 n+1
+
 ```
 
 ## solve - java
